@@ -15,7 +15,7 @@ import PropertySearch from "@/components/PropertySearch";
 
 import Video from "@/components/Video";
 import { Metadata } from "next";
-import { About } from "@/components/component/about";
+import { About } from "@/components/component/About";
 
 export const metadata: Metadata = {
   title: "Auctionwale",
