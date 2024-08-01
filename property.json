@@ -1,0 +1,200 @@
+[
+    {
+        "ID": 1,
+        "Customer_Name": "VIJAYKUMAR C GUPTA",
+        "Current_Auction_Reserve_Price": 7935000,
+        "Property_Address": "PLOT (BUNGLOW) NO 126 MAGIC HILL OLD SURVEY NO 13 TO 17, NEW SURVEY NO 40 VILLAGE AMBIVALI, TAL KHALAPUR, DIST RAIGAD MAHARASHTRA KHALAPUR 410203",
+        "Property_Type": "BUNGLOW",
+        "Property_Area": "ADMEASURING AN AREA OF 288 SQ MTR I.E. 3098.88 SQ FT AREA OF PLOT AND 156 SQ MTR I.E. 1678 SQ FTS AREA OF BUNGLOW",
+        "Image_Url": "/images/property/card5.jpg"
+    },
+    {
+        "ID": 2,
+        "Customer_Name": "VIJAY BHASKAR PUJARI",
+        "Current_Auction_Reserve_Price": 1450000,
+        "Property_Address": "FLAT NI 711/B 7 TH FLOOR B WING DECCCAN RESIDENCY S NO 23/1,C.S. NO 2196 & S NO 23/2 C.S.NO. 2144 VILL SHEEL VILL TAL KHALAPUR DIST RAIGAD MAHARASHTRA-410203",
+        "Property_Type": "1 BHK Flat",
+        "Property_Area": "Carpet area 460 SQ FT",
+        "Image_Url": "/images/property/card1.jpg"
+    },
+    {
+        "ID": 3,
+        "Customer_Name": "VAIBHAV MADHUKAR BHALERAO",
+        "Current_Auction_Reserve_Price": 5500000,
+        "Property_Address": "Flat No 701 & 702 7th Floor Building No. T3 known as \"Eva Luxuria\" constructed on Sr No 383/2 Takli Road Nashik Nasik 422011.",
+        "Property_Type": "Residential",
+        "Property_Area": "Admeasuring carpet area of 153.28 sq. mtrs (1649.89 in SQFT)",
+        "Image_Url": "/images/property/card2.jpg"
+    },
+    {
+        "ID": 4,
+        "Customer_Name": "VAIBHAV MADHUKAR BHALERAO",
+        "Current_Auction_Reserve_Price": 0,
+        "Property_Address": "Link",
+        "Property_Type": "Link",
+        "Property_Area": "Link",
+        "Image_Url": "/images/property/card3.jpg"
+    },
+    {
+        "ID": 5,
+        "Customer_Name": "SUJEET RADHESHYAM SINGH",
+        "Current_Auction_Reserve_Price": 1250000,
+        "Property_Address": "FLAT NO 401, 4th FLOOR, BUILDING TYPE A, C WING DECCAN HOME, MAMDAPUR, OFF. NERAL,BADALAPUR ROAD, S NO. 72, HISSA NO. 2, KARAJAT EAST, DIST- RAIGAD, NERAL, - 410101.",
+        "Property_Type": "1 BHK Flat",
+        "Property_Area": "Carpet area 442 SQ FT",
+        "Image_Url": "/images/property/card4.jpg"
+    },
+    {
+        "ID": 6,
+        "Customer_Name": "SHANKAR VEERASWAMI G",
+        "Current_Auction_Reserve_Price": 1772000,
+        "Property_Address": "FLAT NO.303 3RD FLOOR, K WING, MOUNT VIEW CHSL,DESALE AUTO STAND,DESALE PADA,OPP SAI BABA CHS ,BHOPAR RD DOMBIVALI-E,S.NO.242,THANE-421204",
+        "Property_Type": "1 BHK Flat",
+        "Property_Area": "Built up area 576 SQ FT",
+        "Image_Url": "/images/property/card5.jpg"
+    },
+    {
+        "ID": 7,
+        "Customer_Name": "SAVITA SHATRUDHAN SHARMA",
+        "Current_Auction_Reserve_Price": 1776000,
+        "Property_Address": "FLAT NO. 206, 2nd Floor, & flat no. 306, 3rd FLOOR, PARISPARSH SWAPNOTSAV- WING -A, NEAR TAHSIL OFFICE, CTS NO. 284,285,286, SHAHAPUR, MAHARASHTRA , THANE – 421601.",
+        "Property_Type": "Two-1 BHK Flat",
+        "Property_Area": "Carpet area for Flat no. 206. - 397.72 SQ FT And Carpet area for flat No. 306. - 421.40 SQ FT",
+        "Image_Url": "/images/property/card3.jpg"
+    },
+    {
+        "ID": 8,
+        "Customer_Name": "SAVITA SHATRUDHAN SHARMA",
+        "Current_Auction_Reserve_Price": 0,
+        "Property_Address": "LINK",
+        "Property_Type": "Link",
+        "Property_Area": "Link",
+        "Image_Url": "/images/property/card1.jpg"
+    },
+    {
+        "ID": 9,
+        "Customer_Name": "SATISH SADASHIV PHADKE",
+        "Current_Auction_Reserve_Price": 4725000,
+        "Property_Address": "FLAT NO . 204, 2nd FLOOR, UMIYA KIRAN C.H.S.L. PLOT NO. 71, SECTOR NO 21, KAMOTHE – 2, NAVI MUMBAI, TAL PANVAL, DIST . RAIGAD, MAHARASHTRA – 410209.",
+        "Property_Type": "2 BHK Flat",
+        "Property_Area": "Carpet area 697 SQ FT",
+        "Image_Url": "/images/property/card2.jpg"
+    },
+    {
+        "ID": 10,
+        "Customer_Name": "SANGEETA DEVI",
+        "Current_Auction_Reserve_Price": 3500000,
+        "Property_Address": "OFFICE NO 626, 6TH FLO0R,CENTRAL FACILITY BUILDING ,FRUIT MARKET AREA APMC TURBHE,PLOT NO 3 & 7GUT NO 796 SECTOR- 19 VASHI (TURBHE), NAVI MUMBAI  MAHARASHTRA, NAVI MUMBAI-400705",
+        "Property_Type": "COMMERCIAL SHOP",
+        "Property_Area": "Built up area 565 SQ FT",
+        "Image_Url": "/images/property/card3.jpg"
+    },
+    {
+        "ID": 11,
+        "Customer_Name": "SABIR NAZIRAHAMED SHAIKH",
+        "Current_Auction_Reserve_Price": 45000000,
+        "Property_Address": "\"SHOP NO. 2A (SHOP NO.7 AS PER RECORD ) GROUND FLOOR ,SHIVANJALI CHSL, DR. AMBEDKAR ROAD, CTS NO. E86, E87, E89,E90, &E91 OF VILLAGE BANDRA, S. NOS 725,726&727, KHAR(WEST) MUMBAI 400052.\nSHOP NO. 1C (SHOP NO.6 AS PER RECORD ) GROUND FLOOR ,SHIVANJALI CHSL, DR. AMBEDKAR ROAD, CTS NO. E86, E87, E89,E90, &E91 OF VILLAGE BANDRA, S. NOS 725,726&727, KHAR(WEST) MUMBAI 400052.\"\n",
+        "Property_Type": "Commercial Shop",
+        "Property_Area": "SHOP NO 2A- Carpet area 486 SQ FT\nSHOP NO. 1.C - carpet area 806 SQ FT",
+        "Image_Url": "/images/property/card4.jpg"
+    },
+    {
+        "ID": 12,
+        "Customer_Name": "RUPESH LALLAN DWIWEDEE",
+        "Current_Auction_Reserve_Price": 792000,
+        "Property_Address": "Flat No. 201 2nd floor Build No. 12 wing B2 Poddar navjeewan villege atgoan new S. No. 172/5 old S. No. 208/5 tal. Shahpur dist. Tahne. Maharashtra 421601 ",
+        "Property_Type": "1 BHK Flat",
+        "Property_Area": "313 sq ft Carpet area (including 13 sq ft dry balcony)",
+        "Image_Url": "/images/property/card5.jpg"
+    },
+    {
+        "ID": 13,
+        "Customer_Name": "RUPESH LALLAN DWIWEDEE",
+        "Current_Auction_Reserve_Price": 0,
+        "Property_Address": "Link",
+        "Property_Type": "Link",
+        "Property_Area": "Link",
+        "Image_Url": "/images/property/card3.jpg"
+    },
+    {
+        "ID": 14,
+        "Customer_Name": "RESHMA TALIB SHAIKH",
+        "Current_Auction_Reserve_Price": 799000,
+        "Property_Address": "FLAT NO. 102, PLOT NO. 13, 1ST FLOOR, S P ASHAPURA APARTMENT, VILLAGE, MAMDAPURE, NERAL, KARJAT, LONAVALA, MAHARASHTRA ,KARJAT – 410201.",
+        "Property_Type": "2 BHK Flat",
+        "Property_Area": "Built up area 636 SQ FT",
+        "Image_Url": "/images/property/card1.jpg"
+    },
+    {
+        "ID": 15,
+        "Customer_Name": "RESHMA TALIB SHAIKH",
+        "Current_Auction_Reserve_Price": 0,
+        "Property_Address": "Link",
+        "Property_Type": "Link",
+        "Property_Area": "Link",
+        "Image_Url": "/images/property/card2.jpg"
+    },
+    {
+        "ID": 16,
+        "Customer_Name": "RASIKA RAMAKANT NAIK",
+        "Current_Auction_Reserve_Price": 6050000,
+        "Property_Address": "OFFICE NO. 601, 6TH FLOOR, CENTRAL FACILITY BUILDING, FRUIT MARKET APMC TURBHE, PLOT NO 3 & 7, GUT NO 796, SECTOR-19 VASHI (TURBHE), NAVI MUMBAI, MAHARASTRA, THANE-400705",
+        "Property_Type": "Commercial Shop",
+        "Property_Area": "Built up area 971 SQ FT",
+        "Image_Url": "/images/property/card3.jpg"
+    },
+    {
+        "ID": 17,
+        "Customer_Name": "RASIKA RAMAKANT NAIK",
+        "Current_Auction_Reserve_Price": 0,
+        "Property_Address": "Link",
+        "Property_Type": "Link",
+        "Property_Area": "Link",
+        "Image_Url": "/images/property/card4.jpg"
+    },
+    {
+        "ID": 18,
+        "Customer_Name": "RAGHURAM NARAYAN RAO",
+        "Current_Auction_Reserve_Price": 3899000,
+        "Property_Address": "FLAT NO B 602, 6TH FLOOR, PRATHAMESH HARMONY, UJWE SECTOR NO 2, RAIGAD- 410201",
+        "Property_Type": "1 BHK Flat",
+        "Property_Area": "Carpet area 507 SQ FT",
+        "Image_Url": "/images/property/card5.jpg"
+    },
+    {
+        "ID": 19,
+        "Customer_Name": "PYAR MOHAMMED NAGORI",
+        "Current_Auction_Reserve_Price": 900000,
+        "Property_Address": "FLAT NO. 402, BUILDING TYPE A, C WING, 4TH FLOOR,DECCAN HOMES,MAMADAPUR,OFF NERAL BADALAPUR ROAD, S.NO. 72, HISSA NO. 2, KARJAT EAST, RAIGAD, 410101",
+        "Property_Type": "1 BHK Flat",
+        "Property_Area": "Carpet area 442 SQ FT",
+        "Image_Url": "/images/property/card3.jpg"
+    },
+    {
+        "ID": 20,
+        "Customer_Name": "PARAS PUNAMCHAND SURANI",
+        "Current_Auction_Reserve_Price": 2614000,
+        "Property_Address": "FLAT NO . 207 AND FLAT NO. 208, 2nd FLOOR, A-WING , LEAGACY VRINDAVAN , VILLAGE – GUNDGE , TAL KARJAT , DIST RAIGAD, MAHARASHTRA , NAVI MUMBAI -410201.",
+        "Property_Type": "2 BHK Flat",
+        "Property_Area": "PROPERT 1 – Carpet area for flat no . 207, 619 SQ FT\nProperty 2 – Carpet area for flat no. 208, 619 SQ FT",
+        "Image_Url": "/images/property/card1.jpg"
+    },
+    {
+        "ID": 21,
+        "Customer_Name": "NITIN TALWAR",
+        "Current_Auction_Reserve_Price": 4050000,
+        "Property_Address": "FLAT NO. 404, 4th FLOOR,B WING, SAI ARCADE, PHADKE ROAD, OPP. PITRE BLDG., NR, GANESH MANDIR, DOMBIVALI EAST, VILL- NAVAGAON TAL- KALYAN, DIST – THANE, C.T.S. NO. 4997,5011,5021 & 5033,MAHARASHTRA , THANE-421201.",
+        "Property_Type": "1 BHK Flat",
+        "Property_Area": "Built up area 511 SQ FT",
+        "Image_Url": "/images/property/card2.jpg"
+    },
+    {
+        "ID": 22,
+        "Customer_Name": "NARENDRA KUMAR DEVENDRA MISHRA",
+        "Current_Auction_Reserve_Price": 2500000,
+        "Property_Address": "SHOP NO 3 – GROUND FLOOR, MAITRI ARCADE C.H.S.L. SECTOR NO. 20, PLOT NO. 12 AND 13, VILL KAMOTHE, TAL – PANVEL, DIST, - RAIGAD, NAVI MUMBAI , MAHARASHTRA - 410209",
+        "Property_Type": "Commercial Shop",
+        "Property_Area": "Carpet area 344.96 SQ FT",
+        "Image_Url": "/images/property/card3.jpg"
+    }
+]
