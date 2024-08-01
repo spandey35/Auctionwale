@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible"
 import BackgroundDots from "../Hero/BackgroundDots"
@@ -81,7 +80,7 @@ export function FAQ() {
                 <ChevronDownIcon className="w-5 h-5 ml-4 transition-transform [&[data-state=open]]:rotate-180" />
               </CollapsibleTrigger>
               <CollapsibleContent className="bg-muted/20 rounded-md px-4 py-3 text-sm leadingu-relaxed text-gray-600">
-              Yes, there may be additional fees such as buyer's premium, transfer taxes, or closing costs. These will be clearly outlined in the auction terms and conditions.
+              Yes, there may be additional fees such as buyer&apos;s premium, transfer taxes, or closing costs. These will be clearly outlined in the auction terms and conditions.
               </CollapsibleContent>
             </Collapsible>
             <Collapsible>
