@@ -64,7 +64,7 @@ const PropertyData = ({ imageUrl, price, name, location }) => {
       <div className="px-4 pt-2 pb-2 flex justify-between gap-2">
         <span className="inline-block bg-blue-500 rounded px-1 py-2 text-sm font-semibold text-white mr-2"> ₹{price}</span>
         <button onClick={handleInterest} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded">
-          I'm Interested
+          I&apos;m Interested
         </button>
         <button onClick={handleViewMore} className="bg-transparent border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-1 px-2 rounded">
           View More
