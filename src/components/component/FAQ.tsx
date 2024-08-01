@@ -30,7 +30,7 @@ export function FAQ() {
                 <ChevronDownIcon className="w-5 h-5 ml-4 transition-transform [&[data-state=open]]:rotate-180" />
               </CollapsibleTrigger>
               <CollapsibleContent className="bg-muted/20 rounded-md px-4 py-3 text-sm leading-relaxed text-gray-600">
-              Generally, any individual or entity over 18 years old can participate. However, some auctions may have specific eligibility requirements, so it's important to check the terms and conditions for each auction.
+              Generally, any individual or entity over 18 years old can participate. However, some auctions may have specific eligibility requirements, so it is important to check the terms and conditions for each auction.
               </CollapsibleContent>
             </Collapsible>
             <Collapsible>
