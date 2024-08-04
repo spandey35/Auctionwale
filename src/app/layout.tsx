@@ -11,6 +11,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import { Providers } from "./providers";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,9 +35,11 @@ export default function RootLayout({
           
           <Header />
           {children}
+
           <Footer />
           <ScrollToTop />
           </Providers>
+          <Analytics />
        
         </body>
       
