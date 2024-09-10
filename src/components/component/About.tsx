@@ -17,7 +17,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Swati Tiwari",
-    role: "CTO & Co-founder",
+    role: "SDE",
     image: "/images/swati-tiwari.jpeg",
     linkedin: "https://www.linkedin.com/in/swati-tiwari-a02b2a237/"
   },
