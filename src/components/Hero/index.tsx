@@ -1,7 +1,9 @@
-"use client";
+
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import BackgroundDots from "./BackgroundDots";
+import PropertyPage from "@/app/property/page";
+import PropertySearch from "../PropertySearch";
 
 const Hero = () => {
   // const session=await auth();
@@ -23,13 +25,15 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                where dream homes get delivered
+                Where dream homes get delivered
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                 Auctionwale specializes in selling properties from Bank and Financial Institution. Auctionwale is a cutting-edge auction company that combines traditional expertise with innovative technology to provide a unique and unparalleled auction experience.  
                 </p>
+                
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <a
+                 
+                 {/* <a
                     href="/"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
@@ -40,7 +44,7 @@ const Hero = () => {
   className="relative z-50 inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
 >
   Join Our WhatsApp Group
-</button>
+</button>*/}
                 </div>
               </div>
             </div>

@@ -13,14 +13,14 @@ const menuData: Menu[] = [
     path: "/property",
     newTab: false,
   },
- 
+ /*
   {
     id: 3,
     title: "📞+91 7030304717",
     path: "/contact",
     newTab: false,
   },
-  
+
   {
     id: 4,
     title: "Pages",
@@ -58,7 +58,32 @@ const menuData: Menu[] = [
         newTab: false,
       },
     ],
-  },
-  
+  },  */ 
+  {
+    id: 49,
+    title: "Company",
+    newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: "About Page",
+        path: "/about",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Contact Page",
+        path: "/contact",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "F&Q",
+        path: "/FAQSection",
+        newTab: false,
+      },
+      
+    ],
+  }
 ];
 export default menuData;

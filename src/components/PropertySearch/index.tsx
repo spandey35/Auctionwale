@@ -23,6 +23,8 @@ const PropertySearch = () => {
     setFilter(searchCriteria);
   };
 
+
+
   const formatPrice = (price) => {
     if (price >= 10000000) {
       return (price / 10000000).toFixed(2) + " crore";

@@ -75,7 +75,8 @@ const Header = () => {
                   alt="logo"
                   width={140}
                   height={30}
-                  className="hidden w-full dark:block"
+                  className="w-full block dark:block dark:bg-grey-700"
+                  style={{backgroundColor:"transparent"}}
                 />
               </Link>
             </div>
@@ -170,16 +171,17 @@ const Header = () => {
               <>
               <Link
                 href="/sign-in"
-                className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
+                className="px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
               >
                 Log In
               </Link>
-              <Link
+              {/*<Link
                 href="/sign-up"
                 className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
               >
                 Sign Up
-              </Link>
+              </Link>*/}
+              
               </>
             :
             <UserButton/>  
