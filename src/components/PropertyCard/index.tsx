@@ -1,9 +1,13 @@
 "use client";
-import React from 'react';
-import PropertyData from './propertData';
+import React from "react";
+import PropertyData from "./propertData";
 import property from "property.json";
+import "@/styles/index.css";
+
+import Slider from "react-slick";
 
 const PropertiesList = () => {
+  // Function to format price
   const formatPrice = (price) => {
     if (price >= 10000000) {
       return (price / 10000000).toFixed(2) + " crore";
@@ -14,16 +18,30 @@ const PropertiesList = () => {
     }
   };
 
-  return (
-    <>
-      <div>
-        <h1 className="text-4xl text-center font-bold mt-8">Recently Added Properties</h1>
-      </div>
-      <div className="w-full justify-center items-center flex flex-wrap p-12 gap-8">
-        {property.map((property) => {
-          const { ID, Image_Url, Property_Type, Property_Address, Current_Auction_Reserve_Price } = property;
+  // Carousel settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
 
-          // Check if any required field is missing or invalid
+  return (
+    <div className="p-8">
+      <h1 className="mt-8 text-center text-4xl font-bold">
+        Recently Added Properties
+      </h1>
+      <Slider {...settings} className="mt-8">
+        {property.map((property) => {
+          const {
+            ID,
+            Image_Url,
+            Property_Type,
+            Property_Address,
+            Current_Auction_Reserve_Price,
+          } = property;
+
+          // Validation to skip invalid data
           if (
             !ID ||
             !Property_Type ||
@@ -37,18 +55,20 @@ const PropertiesList = () => {
             return null;
           }
 
+          // Render PropertyData inside each slide
           return (
-            <PropertyData
-              key={ID}
-              imageUrl={Image_Url}
-              name={Property_Type}
-              location={Property_Address}
-              price={formatPrice(Current_Auction_Reserve_Price)}
-            />
+            <div key={ID} className="p-4">
+              <PropertyData
+                imageUrl={Image_Url}
+                name={Property_Type}
+                location={Property_Address}
+                price={formatPrice(Current_Auction_Reserve_Price)}
+              />
+            </div>
           );
         })}
-      </div>
-    </>
+      </Slider>
+    </div>
   );
 };
 
