@@ -27,18 +27,16 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-     {/*<ScrollUp />*/}
-      <Hero/>
-      <PropertySearch/>
+      {/*<ScrollUp />*/}
+      <Hero />
+      {/* <PropertySearch /> */}
       <Cities />
       <PropertyCard />
       <Testimonials />
-      <WhatsAppIcon/>
+      <WhatsAppIcon />
       {/*<FAQSection />
       <Contact />
       <About />*/}
-      
-      
     </>
   );
 }

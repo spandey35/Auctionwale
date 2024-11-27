@@ -1,6 +1,7 @@
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
+import PropertySearch from "../PropertySearch";
 
 const testimonialData: Testimonial[] = [
   {
@@ -21,20 +22,20 @@ const testimonialData: Testimonial[] = [
     image: "/images/testimonials/auth-02.png",
     star: 4,
   },
-  // {
-  //   id: 3,
-  //   name: "Lethium Frenci",
-  //   designation: "Founder @Lineicons",
-  //   content:
-  //     "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-  //   image: "/images/testimonials/auth-03.png",
-  //   star: 5,
-  // },
+  {
+    id: 3,
+    name: "Lethium Frenci",
+    designation: "Founder @Lineicons",
+    content:
+      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    image: "/images/testimonials/auth-03.png",
+    star: 5,
+  },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="What Our clinet Says"
@@ -48,6 +49,7 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
+
       <div className="absolute right-0 top-5 z-[-1]">
         <svg
           width="238"

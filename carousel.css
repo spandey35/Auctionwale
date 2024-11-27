@@ -1,0 +1,33 @@
+/* carousel.css or globals.css */
+
+/* Override arrow styles */
+.slick-prev:before,
+.slick-next:before {
+  color: #333; /* Default arrow color for light mode */
+}
+
+.dark-mode .slick-prev:before,
+.dark-mode .slick-next:before {
+  color: #fff; /* Arrow color for dark mode */
+}
+
+/* Override dot styles */
+.slick-dots li button:before {
+  color: #333; /* Dot color for light mode */
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333; /* Active dot color for light mode */
+  opacity: 1;
+}
+
+.dark-mode .slick-dots li button:before {
+  color: #fff; /* Dot color for dark mode */
+  opacity: 0.5;
+}
+
+.dark-mode .slick-dots li.slick-active button:before {
+  color: #fff; /* Active dot color for dark mode */
+  opacity: 1;
+}
