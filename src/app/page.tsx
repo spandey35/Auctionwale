@@ -16,6 +16,7 @@ import PropertySearch from "@/components/PropertySearch";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 import { About } from "@/components/component/About";
+import WhatsAppIcon from "@/components/WhatsApp";
 
 export const metadata: Metadata = {
   title: "Auctionwale",
@@ -26,17 +27,16 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <ScrollUp />
+      {/*<ScrollUp />*/}
       <Hero />
+      {/* <PropertySearch /> */}
       <Cities />
       <PropertyCard />
-       <Testimonials />
-       <FAQSection />
-       <PropertySearch/>
-       <Contact />
-       <About />
-      
-      
+      <Testimonials />
+      <WhatsAppIcon />
+      {/*<FAQSection />
+      <Contact />
+      <About />*/}
     </>
   );
 }

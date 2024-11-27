@@ -3,15 +3,18 @@ import {
   SignInButton,
   SignedIn,
   SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+  UserButton,
+} from "@clerk/nextjs";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import { Providers } from "./providers";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "@/styles/index.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,21 +33,17 @@ export default function RootLayout({
       <link rel="icon" href="/logo.svg" />
       <head />
       <ClerkProvider>
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-        <Providers>
-          
-          <Header />
-          {children}
+        <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+          <Providers>
+            <Header />
+            {children}
 
-          <Footer />
-          <ScrollToTop />
+            <Footer />
+            <ScrollToTop />
           </Providers>
           <Analytics />
-       
         </body>
-      
-    </ClerkProvider>
-    
+      </ClerkProvider>
     </html>
   );
 }

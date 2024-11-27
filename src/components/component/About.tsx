@@ -12,7 +12,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: "Ankita Tiwari",
-    role: "CEO & Co-founder", 
+    role: "CEO & founder", 
     image: "/images/ankitaa-tiwari.jpeg",
   },
   {
