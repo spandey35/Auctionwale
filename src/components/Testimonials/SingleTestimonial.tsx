@@ -16,7 +16,7 @@ const SingleTestimonial = ({ testimonial }) => {
         {/* Content with fixed height to avoid variable lengths */}
         <div className="flex-grow">
           <p className="text-base leading-relaxed text-body-color dark:text-white">
-            "{content}"
+            {content}
           </p>
         </div>
 
