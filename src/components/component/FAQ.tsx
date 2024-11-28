@@ -10,7 +10,7 @@ export function FAQ() {
     <>
       <BackgroundDots />
       <section className="bg-background text-foreground py-12 md:py-16">
-        <div className="container mx-auto max-w-4xl px-4 md:px-6">
+        <div className="container mx-auto mt-8 max-w-4xl px-4 md:px-6 ">
           <div className="grid gap-8">
             <div className="grid gap-2">
               <h2 className="text-2xl font-bold md:text-3xl">
