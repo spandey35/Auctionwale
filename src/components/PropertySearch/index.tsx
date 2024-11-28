@@ -95,8 +95,8 @@ const PropertySearch = () => {
         onInputChange={handleInputChange}
         onSearchClick={handleSearchClick}
       />
-      {/* <div className="container flex flex-wrap gap-8 p-12"> */}
-      {/* {filteredProperties.map((property) => (
+      <div className="container flex flex-wrap gap-8 p-12">
+        {filteredProperties.map((property) => (
           <PropertyData
             key={property.ID}
             imageUrl={property.Image_Url}
@@ -104,8 +104,8 @@ const PropertySearch = () => {
             location={property.Property_Address}
             price={formatPrice(property.Current_Auction_Reserve_Price)}
           />
-        ))} */}
-      {/* </div> */}
+        ))}
+      </div>
     </>
   );
 };
