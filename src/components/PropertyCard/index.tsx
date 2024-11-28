@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import PropertyData from "./propertData"; // Assuming the correct file name for PropertyData
+import PropertyData from "./propertData";
 import property from "property.json";
 import "@/styles/index.css";
 import Slider from "react-slick";
