@@ -5,6 +5,14 @@
 /* carousel.css or globals.css */
 
 /* Override arrow styles */
+
+.slick-next {
+  right: -12px; /* Move the right arrow closer to the last card */
+}
+.slick-prev {
+  left: -12px; /* Move the right arrow closer to the last card */
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: #858484; /* Default arrow color for light mode */
