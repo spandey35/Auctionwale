@@ -81,7 +81,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="/" //youtube Link will be pasted here if channel will be created
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
