@@ -34,7 +34,7 @@ const Footer = () => {
                 </p>
                 <div className="flex items-center">
                 <a
-  href="https://www.instagram.com/"
+  href="https://www.instagram.com/auctionwale.in/"
   aria-label="social-link"
   target="_blank"
   rel="noopener noreferrer"
