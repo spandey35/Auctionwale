@@ -1,42 +1,56 @@
-import React from 'react';
+import React from "react";
 
 const Cities = () => {
   return (
-    <div className='min-h-screen w-full flex flex-col justify-center items-center'>
-      <h2 className="text-4xl font-bold text-center mb-[120px]">
-        We are available in many<br />well-known cities
-      </h2>
-      <div className="w-full flex justify-start items-start flex-wrap gap-4">
-        <a href="" className="flex-1">
-          <div className="relative w-full h-72 bg-cover bg-center" style={{ backgroundImage: "url('/images/hero/andheri.jpg')" }}>
-            <div className="absolute inset-0 bg-black/30 flex justify-center items-center">
-              <p className="text-white text-lg">Mumbai</p>
+    <>
+      <div className="mb-20 mt-20">
+        <h2 className="mb-[80px] text-center text-4xl font-bold">
+          We are available in many well-known cities
+        </h2>
+        <div className="flex w-full flex-wrap items-start justify-start gap-4">
+          <a href="" className="flex-1">
+            <div
+              className="relative h-72 w-full bg-cover bg-center"
+              style={{ backgroundImage: "url('/images/hero/andheri.jpg')" }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                <p className="text-lg text-white">Mumbai</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="" className="flex-1">
-          <div className="relative w-full h-72 bg-cover bg-center" style={{ backgroundImage: "url('/images/hero/bandra.jpg')" }}>
-            <div className="absolute inset-0 bg-black/30 flex justify-center items-center">
-              <p className="text-white text-lg">Palghar</p>
+          </a>
+          <a href="" className="flex-1">
+            <div
+              className="relative h-72 w-full bg-cover bg-center"
+              style={{ backgroundImage: "url('/images/hero/bandra.jpg')" }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                <p className="text-lg text-white">Palghar</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="" className="flex-1">
-          <div className="relative w-full h-72 bg-cover bg-center" style={{ backgroundImage: "url('/images/hero/chembur.jpg')" }}>
-            <div className="absolute inset-0 bg-black/30 flex justify-center items-center">
-              <p className="text-white text-lg">Navi Mumbai</p>
+          </a>
+          <a href="" className="flex-1">
+            <div
+              className="relative h-72 w-full bg-cover bg-center"
+              style={{ backgroundImage: "url('/images/hero/chembur.jpg')" }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                <p className="text-lg text-white">Navi Mumbai</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="" className="flex-1">
-          <div className="relative w-full h-72 bg-cover bg-center" style={{ backgroundImage: "url('/images/hero/juhu.jpg')" }}>
-            <div className="absolute inset-0 bg-black/30 flex justify-center items-center">
-              <p className="text-white text-lg">Thane</p>
+          </a>
+          <a href="" className="flex-1">
+            <div
+              className="relative h-72 w-full bg-cover bg-center"
+              style={{ backgroundImage: "url('/images/hero/juhu.jpg')" }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                <p className="text-lg text-white">Thane</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -3,8 +3,11 @@ import React, { useState } from "react";
 import { ExploreProperty } from "../component/ExploreProperty";
 import PropertyData from "../PropertyCard/propertData";
 import property from "property.json";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 const PropertySearch = () => {
+  const router = useRouter();
   const [searchCriteria, setSearchCriteria] = useState({
     city: "",
     locality: "",
@@ -14,13 +17,20 @@ const PropertySearch = () => {
 
   const [filter, setFilter] = useState(searchCriteria);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setSearchCriteria({ ...searchCriteria, [name]: value });
   };
 
   const handleSearchClick = () => {
-    setFilter(searchCriteria);
+    // Convert the filter criteria to URL parameters
+    const params = new URLSearchParams();
+    Object.entries(searchCriteria).forEach(([key, value]) => {
+      if (value) params.append(key, value);
+    });
+
+    // Navigate to the property page with search parameters
+    router.push(`/property?${params.toString()}`);
   };
 
   const formatPrice = (price) => {
@@ -56,57 +66,11 @@ const PropertySearch = () => {
     }
   };
 
-  const filteredProperties = property.filter((p) => {
-    const addressIncludes = (searchString) =>
-      p.Property_Address.toLowerCase().includes(searchString.toLowerCase());
-
-    // Check for valid property details
-    const isValidProperty =
-      p.ID &&
-      p.Property_Type &&
-      p.Property_Type.toLowerCase() !== "link" &&
-      p.Property_Address &&
-      p.Property_Address.toLowerCase() !== "link" &&
-      !isNaN(p.Current_Auction_Reserve_Price) &&
-      p.Current_Auction_Reserve_Price > 0;
-
-    // Check if budget criteria is met
-    const isWithinBudget = () => {
-      if (filter.budget === "") return true;
-      const budgetValue = parseBudget(filter.budget);
-      return p.Current_Auction_Reserve_Price <= budgetValue;
-    };
-
-    return (
-      isValidProperty &&
-      (filter.city === "" || addressIncludes(filter.city)) &&
-      (filter.locality === "" || addressIncludes(filter.locality)) &&
-      (filter.propertyType === "" ||
-        p.Property_Type.toLowerCase().includes(
-          filter.propertyType.toLowerCase(),
-        )) &&
-      isWithinBudget()
-    );
-  });
-
   return (
-    <>
-      <ExploreProperty
-        onInputChange={handleInputChange}
-        onSearchClick={handleSearchClick}
-      />
-      <div className="container flex flex-wrap gap-8 p-12">
-        {filteredProperties.map((property) => (
-          <PropertyData
-            key={property.ID}
-            imageUrl={property.Image_Url}
-            name={property.Property_Type}
-            location={property.Property_Address}
-            price={formatPrice(property.Current_Auction_Reserve_Price)}
-          />
-        ))}
-      </div>
-    </>
+    <ExploreProperty
+      onInputChange={handleInputChange}
+      onSearchClick={handleSearchClick}
+    />
   );
 };
 
