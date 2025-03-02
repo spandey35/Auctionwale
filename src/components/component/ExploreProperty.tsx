@@ -2,27 +2,44 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+} from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
+import { useRouter } from "next/navigation";
 
-export function ExploreProperty({ onInputChange, onSearchClick }) {
+interface ExplorePropertyProps {
+  onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onSearchClick: () => void;
+}
+
+export function ExploreProperty({
+  onInputChange,
+  onSearchClick,
+}: ExplorePropertyProps) {
+  const router = useRouter();
+
   return (
     <>
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center my-4">Explore Properties</h2>
+      <h2 className="my-4 text-center text-2xl font-bold sm:text-3xl lg:text-4xl">
+        Explore Properties
+      </h2>
 
-      <div className="flex flex-wrap items-center gap-4 bg-background p-4 rounded-lg shadow-md">
-        <div className="w-full sm:w-auto flex-grow">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="bg-background flex flex-wrap items-center gap-4 rounded-lg p-4 shadow-md">
+        <div className="w-full flex-grow sm:w-auto">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <div className="relative">
               <Input
                 type="text"
                 name="city"
                 placeholder="Enter city"
                 onChange={onInputChange}
-                className="flex items-center gap-2 px-4 py-2 rounded-md pl-10 pr-4 border border-muted focus:border-transparent focus:ring-primary w-full"
+                className="border-muted flex w-full items-center gap-2 rounded-md border px-4 py-2 pl-10 pr-4 focus:border-transparent focus:ring-primary"
               />
-              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <MapPinIcon className="w-5 h-5 text-muted-foreground " />
+              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <MapPinIcon className="text-muted-foreground h-5 w-5 " />
               </div>
             </div>
             <div className="relative">
@@ -31,10 +48,10 @@ export function ExploreProperty({ onInputChange, onSearchClick }) {
                 name="propertyType"
                 placeholder="Property Type"
                 onChange={onInputChange}
-                className="flex items-center gap-2 px-4 py-2 rounded-md pl-10 pr-4 border border-muted focus:border-transparent focus:ring-primary w-full"
+                className="border-muted flex w-full items-center gap-2 rounded-md border px-4 py-2 pl-10 pr-4 focus:border-transparent focus:ring-primary"
               />
-              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <LocateIcon className="w-5 h-5 text-muted-foreground" />
+              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <LocateIcon className="text-muted-foreground h-5 w-5" />
               </div>
             </div>
             <div className="relative">
@@ -43,10 +60,10 @@ export function ExploreProperty({ onInputChange, onSearchClick }) {
                 name="budget"
                 placeholder="Property Budget in lakh"
                 onChange={onInputChange}
-                className="flex items-center gap-2 px-4 py-2 rounded-md pl-10 pr-4 border border-muted focus:border-transparent focus:ring-primary w-full"
+                className="border-muted flex w-full items-center gap-2 rounded-md border px-4 py-2 pl-10 pr-4 focus:border-transparent focus:ring-primary"
               />
-              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <MoneyIcon className="w-5 h-5 text-muted-foreground" />
+              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <MoneyIcon className="text-muted-foreground h-5 w-5" />
               </div>
             </div>
             <div className="relative">
@@ -59,15 +76,20 @@ export function ExploreProperty({ onInputChange, onSearchClick }) {
                 </PopoverContent>
               </Popover> */}
               <Input
-                    type="text"
-                    placeholder="Application date"
-                    className="flex items-center gap-2 px-4 py-2 rounded-md pr-4 pl-4 border border-muted focus:border-transparent focus:ring-primary cursor-pointer w-full"
-                  />
+                type="text"
+                placeholder="Application date"
+                className="border-muted flex w-full cursor-pointer items-center gap-2 rounded-md border px-4 py-2 pl-4 pr-4 focus:border-transparent focus:ring-primary"
+              />
             </div>
           </div>
         </div>
-        <div className="w-full sm:w-auto flex justify-center sm:justify-end">
-          <Button className="ml-auto w-full sm:w-auto" onClick={onSearchClick}>
+        <div className="flex w-full justify-center sm:w-auto sm:justify-end">
+          <Button
+            className="ml-auto w-full sm:w-auto"
+            onClick={() => {
+              onSearchClick();
+            }}
+          >
             Search
           </Button>
         </div>
@@ -139,4 +161,3 @@ function MoneyIcon(props) {
     </svg>
   );
 }
-
